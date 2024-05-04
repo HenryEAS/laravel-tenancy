@@ -33,6 +33,7 @@ Route::get('/test', function() {
     $userCentral = tenancy()->central(function () {
         return \App\Models\User::first();
     });
+//    dd($userCentral);
 
     // Return to parent child
     tenancy()->end(); //TODO: fix [tenant] configurtion

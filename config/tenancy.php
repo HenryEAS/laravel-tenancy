@@ -64,7 +64,6 @@ return [
             'mysql' => Stancl\Tenancy\TenantDatabaseManagers\MySQLDatabaseManager::class,
             'pgsql' => Stancl\Tenancy\TenantDatabaseManagers\PostgreSQLDatabaseManager::class,
             'sqlsrv' => App\TenantDatabaseManagers\SqlServerDatabaseManager::class,
-            'tenant' => App\TenantDatabaseManagers\SqlServerDatabaseManager::class,
 
         /**
          * Use this database manager for MySQL to have a DB user created for each tenant database.
