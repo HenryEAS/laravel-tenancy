@@ -31,8 +31,7 @@ Route::middleware([
 
     Route::middleware('auth')->group(function() {
         Route::get('/dashboard', function() {
-            return view('tenancy.dashboard');
-        })->name('tenancy.dashboard');
+            return view('tenancy.dashboard');})->name('tenancy.dashboard');
 
         Route::resource('tasks',TaskController::class);
     });
